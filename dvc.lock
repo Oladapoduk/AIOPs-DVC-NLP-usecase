@@ -10,8 +10,8 @@ stages:
       md5: f30903bae4110285722596521434cdb3
       size: 1664
     - path: src/utils/common.py
-      md5: d162961d817182441383bdb0e674e685
-      size: 675
+      md5: da75efcaa8787eb12aa16e9c351947cd
+      size: 1000
     outs:
     - path: data/data.xml
       md5: a304afb96060aad90176268345e10355
@@ -29,8 +29,8 @@ stages:
       md5: 125808af32f7db5a2343c600b573787e
       size: 2090
     - path: src/utils/common.py
-      md5: d162961d817182441383bdb0e674e685
-      size: 675
+      md5: da75efcaa8787eb12aa16e9c351947cd
+      size: 1000
     - path: src/utils/data_mgmt.py
       md5: 85d36c52eee5649090bc77738f442049
       size: 839
