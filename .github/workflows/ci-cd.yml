@@ -37,6 +37,7 @@ jobs:
             # Your ML flow commands
             pip install --upgrade pip
             pip install -r requirements.txt
+            pip install fsspec==2022.1.0
 
             dvc repro -v
             echo "# REPORTS" >> report.md
