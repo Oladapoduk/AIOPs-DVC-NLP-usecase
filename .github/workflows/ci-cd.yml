@@ -21,20 +21,20 @@ on: [push]
 #           --cloud-region us-west \
 #           --cloud-type=m \
 #           --labels=cml-runner 
-jobs:
-  deploy-runner:
-    runs-on: [ubuntu-latest]
-    steps:
-      - uses: actions/checkout@v2
-      - uses: iterative/setup-cml@v1
-      - uses: actions/setup-python@v2
-        with:
-            python-version: '3.7'
-      - name: cml-run
-        env:
-            repo_token: ${{secrets.GITHUB_TOKEN}}
-        run :
-            # Your ML flow commands
+  jobs:
+    deploy-runner:
+      runs-on: [ubuntu-latest]
+      steps:
+        - uses: actions/checkout@v2
+        - uses: iterative/setup-cml@v1
+        - uses: actions/setup-python@v2
+          with:
+              python-version: '3.7'
+        - name: cml-run
+          env:
+              repo_token: ${{secrets.GITHUB_TOKEN}}
+          run :
+              # Your ML flow commands
             pip install --upgrade pip
             pip install -r requirements.txt
             pip install fsspec==2022.1.0
